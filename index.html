@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук фільмів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h2>Пошук фільмів</h2>
+        <div>
+            <input type="text" id="searchInput" placeholder="Введіть назву фільму" />
+            <button id="searchButton">Пошук</button>
+        </div>
+        <div id="movieResults"></div>
+
+        <h3>Додати новий фільм</h3>
+        <input type="text" id="movieTitle" placeholder="Назва фільму" />
+        <input type="text" id="movieYear" placeholder="Рік випуску" />
+        <input type="text" id="moviePoster" placeholder="URL постера" />
+        <button id="addMovieButton">Додати фільм</button>
+
+        <div id="movieList"></div>
+    </div>
+
+    <!-- Firebase конфігурація -->
+    <script type="module" src="firebase-config.js"></script>
+    <!-- Основний скрипт додатка -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
